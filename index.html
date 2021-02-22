@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Biglietto</title>
+</head>
+<body>
+    <div class="text">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </div>
+    <div class="calcolo">
+        <div class="my_input">
+            <div>
+                <h4>NOME COGNOME</h4>
+                <input id="nome" type="text" name="fname">               
+            </div>
+            <div>
+                <h4>KM DA PERCORRERE</h4>
+                <input id="km" type="number" name="klm">
+            </div>
+            <div>
+                <h4>ETA'</h4>
+                <select name="eta" id="anni">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="silver">Over 65</option>
+                </select>    
+            </div>
+        </div>
+        <div class="btn">
+            <button id="conferma" type="button">CONFERMA</button>
+            <button type="button">ANNULLA</button>
+        </div>
+
+    </div>
+    <div class="text">
+        <h1>IL TUO BIGLIETTO</h1>
+    </div>
+    <div class="hidden">
+        <h1>DETTAGLIO PASSEGGIERI</h1>
+        <table>
+            <tr>
+                <th><h3>NOME PASSEGGIERO</h3></th>               
+                <th><h3>Offerta</h3></th>
+                <th><h3>Carrozza</h3></th>
+                <th><h3>Codice CP</h3></th>
+                <th><h3>Costo Biglietto</h3></th>
+            </tr>
+            <tr>
+                <td id="tz_name"></td>
+                <td id="off"></td>
+                <td id="car"></td>
+                <td id="cp"></td>
+                <td id="prz"></td>
+            </tr>
+        </table>
+    </div>
+      
+
+
+  </div>
+    <script type="text/javascript" src="js/myscript.js"></script>
+</body>
+</html>
