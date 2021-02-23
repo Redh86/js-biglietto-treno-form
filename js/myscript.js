@@ -21,9 +21,9 @@ document.getElementById("conferma").addEventListener("click",
         document.getElementById("off").innerHTML = age;    
         
         // NON CONOSCO IL COMANDO PER FAR INJECTARE LE OPZIONI DEL SELECT
-        if (age = "minorenne") {
+        if (age = "Minorenne") {
             price = (kmprz - scontounder) * kilometri;
-        } else if (age = "silver") {
+        } else if (age = "Silver") {
             price = (kmprz - scontoover) *kilometri;
         }
         
